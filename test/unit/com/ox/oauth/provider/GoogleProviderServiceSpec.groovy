@@ -1,6 +1,6 @@
 package com.ox.oauth.provider
 
-import grails.test.mixin.TestFor
+import grails.test.mixin.*
 import spock.lang.Specification
 
 

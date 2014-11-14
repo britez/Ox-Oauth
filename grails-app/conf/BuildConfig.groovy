@@ -44,6 +44,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+		mavenRepo "http://repository.codehaus.org"
+		mavenRepo "http://snapshots.repository.codehaus.org"
     }
 
     dependencies {
@@ -51,12 +53,8 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
-		compile "com.google.oauth-client:google-oauth-client:1.18.0-rc"
-		compile "com.google.oauth-client:google-oauth-client-servlet:1.18.0-rc"
-		compile "com.google.oauth-client:google-oauth-client-appengine:1.18.0-rc"
-		compile "com.google.oauth-client:google-oauth-client-java6:1.18.0-rc"
-		compile "com.google.oauth-client:google-oauth-client-jetty:1.18.0-rc"
-		compile "com.google.http-client:google-http-client-jackson:1.18.0-rc"
+		
+		compile "org.codehaus.groovy.modules.http-builder:http-builder:0.7"
     }
 
     plugins {
