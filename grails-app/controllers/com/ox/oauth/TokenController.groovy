@@ -12,7 +12,6 @@ class TokenController {
 	def authService;
 
     def show() {
-		User current = null;
 		try {
 			render authService.validate(request.getHeader(AUTHORIZATION)) as JSON
 			return
